@@ -1,0 +1,14 @@
+#app_button {
+    width: fit-content;
+    background-color: var(--bright_white);
+}
+
+input button {
+    border-radius: 15%;
+    height: 48px;
+    margin-bottom: 8px;
+}
+
+#main_screen{
+    text-align: center;
+}

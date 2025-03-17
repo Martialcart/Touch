@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="nor">
+    <head>
+        <title>Touch</title>
+        <link rel="stylesheet" href="css/defaultv4.css?version5">
+        <link rel="stylesheet" href="css/touch.css">
+        <script src="js/mainv4.js?=v4" defer></script>
+        <script src="js/touchv3.js" defer></script>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Learn to type faster on the keyboard faster. Program is focusing on the letters you are worst at">
+    </head>
+    <body onload="update_chars()">
+        <div id=header></div>
+        <div id="menu" ></div>
+        
+        <div id="main_screen">
+                <h2>Touch</h2>
+                <p id="wpm">Ord i minuttet:</p>
+                <p id="char_request"></p>
+                <p id="char_result"></p>
+                <label for="char_input">Trykk i teksfeltet for å starte</label><br>
+                <input id="char_input" type="text" onfocus="update_chars() " oninput="handle_input()"><br><br>
+                <h3>Instruksjoner</h3>
+                <ul style="list-style-position: inside;">
+                    <li>Touch lærer deg å skrive raskere på tastaturet.</li>
+                    <li>Skriv bokstavene som vises øverst, så raskt du klarer.</li>
+                    <li>Spillet fokuserer på bokstavene du er dårligst på.</li>
+                    <p>
+                        Hemmeligheten bak å skrive raskt, er å <b>ikke</b> se på tastuturet mens man skriver. <br>
+                        Tastene f og j har knotter pekefingrene kan føle seg frem til.
+                    </p>
+                </ul>
+                <h4>Innstillinger</h4>
+                <label for="train_char">Endre tegn og bokstaver:</label> <br>
+                <textarea id="train_char">abcdefghijklmnopqrstuvwxyzæøå</textarea>
+        </div>
+    </body>    
+</html>
